@@ -1,6 +1,6 @@
 name: MANUAL - Build, Release and Publish
 
-on:    
+on: 
   workflow_dispatch:
     inputs:
       env:
@@ -27,7 +27,7 @@ on:
         default: true
 
 env:
-  app_name: ${{ inputs.env == 'production' && 'hcl_domino_standalone_provisioner' || 'hcl_domino_standalone_provisioner_development' }}
+  app_name: ${{ inputs.env == 'production' && 'hcl_domino_additional_provisioner' || 'hcl_domino_additional_provisioner_development' }}
   suffix: ${{ inputs.env == 'development' && '-dev' || '' }}
 
 jobs:
