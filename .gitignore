@@ -9,6 +9,7 @@ support-bundle.zip
 .vagrant
 hcl_domino_additional_provisioner/id_rsa
 hcl_domino_additional_provisioner/Hosts.yml
+Hosts.template.yml
 hcl_domino_additional_provisioner/results.yml
 # Don't include your ID Files!
 id-files/*.ids
