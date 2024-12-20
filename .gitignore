@@ -31,6 +31,7 @@ SAFE.IDS
 *.swp
 .classpath
 .project
+.vscode/
 .settings/
 .gradle/
 build/
@@ -42,5 +43,3 @@ test_files/
 */installers/*/archives/*.zip
 */installers/*/archives/*.gz
 */installers/*/archives/*.tgz
-
-.vscode/settings.json
