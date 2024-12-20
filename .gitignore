@@ -1,5 +1,5 @@
 ## Don't Save Secrets That pertain to Secure details
-#.secrets.yml
+.secrets.yml
 vault.yml
 ## Don't Save Log Files
 *.log
@@ -8,6 +8,7 @@ support-bundle.zip
 # Don't Include Vagrant support files
 .vagrant
 hcl_domino_additional_provisioner/id_rsa
+hcl_domino_additional_provisioner/.secrets.yml
 hcl_domino_additional_provisioner/Hosts.yml
 Hosts.template.yml
 hcl_domino_additional_provisioner/results.yml
