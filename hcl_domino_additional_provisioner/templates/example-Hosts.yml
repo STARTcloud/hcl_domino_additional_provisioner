@@ -1,5 +1,5 @@
 # core_provisioner_version: 0.2.8
-# provisioner_name: hcl_domino_standalone_provisioner
+# provisioner_name: hcl_domino_additional_provisioner
 # provisioner_version: 0.1.23
 #
 # Template Notes:
@@ -20,7 +20,7 @@ hosts:
   -
     settings:
       # Identifiers
-      hostname: REPLACEME #test-standalone
+      hostname: REPLACEME #test-additional
       domain: REPLACEME #shi.com
       server_id: REPLACEME #'1234'
 
@@ -35,7 +35,7 @@ hosts:
 
       # Box information
       box: 'STARTcloud/debian12-server'
-      box_url: 'https://vagrantcloud.com'
+      box_url: 'https://boxvault.startcloud.com'
       box_version: 0.0.9
 
       # Provider Specific Settings
@@ -113,10 +113,9 @@ hosts:
                 run: once
                 remote_collections: false
                 collections:
-#                  - startcloud.startcloud_roles
-#                  - startcloud.hcl_roles
-#                  - moonshine.moonshine_roles
-#                  - community.docker
+                  - startcloud.startcloud_roles
+                  - startcloud.hcl_roles
+                  - moonshine.moonshine_roles
               -
                 description: "This Playbook is a special provisioner that will always run, ie vagrant up, vagrant reload"
                 playbook: ansible/always-playbook.yml
