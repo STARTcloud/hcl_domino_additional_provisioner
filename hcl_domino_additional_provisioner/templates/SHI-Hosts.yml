@@ -204,7 +204,7 @@ hosts:
       #  - downloads
 
       ## Use Proxy for downloads and updates
-      use_proxy: false
+      use_proxy: ::USE_HTTP_PROXY::
       proxy_server: ::HTTP_PROXY_HOST::
       proxy_port: ::HTTP_PROXY_PORT::
 
