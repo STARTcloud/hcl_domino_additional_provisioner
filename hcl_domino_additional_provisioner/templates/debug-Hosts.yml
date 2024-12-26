@@ -254,9 +254,9 @@ hosts:
 
       ## Additional server options
       is_additional_server: true
-      domino_server_id: "additional-demo.startcloud.com.id"
-      origin_server: "standalone-demo.startcloud.com"
-      origin_server_ip: "192.168.2.255"
+      #domino_server_id: "additional-demo.startcloud.com.id"
+      #origin_server: "standalone-demo.startcloud.com"
+      #origin_server_ip: "192.168.2.255"
 
       # ots: Use One Touch Setup to generate the ID (server names are incremented, ie mail1 mail2 mail3 . .)
       # asja: Use Custom Additional Server Java Applet to generate the additional server ID
@@ -269,10 +269,12 @@ hosts:
       # For use in Domino 12 and below
       #ots_generate_server_id_count:  1
       #ots_generate_server_id_pattern: mail
+      
       #asja_generate_server_ids:
       #  - ::DOMINO_ADITIONAL_HOSTNAME::.::SERVER_DOMAIN::.id
       #  - ::OTHER_DOMINO_ADITIONAL_HOSTNAME::.::SERVER_DOMAIN::.id
       #  - ::THIRD_DOMINO_ADITIONAL_HOSTNAME::.::SERVER_DOMAIN::.id
+
 
       ## Genesis Variables
       genesis_packages:
