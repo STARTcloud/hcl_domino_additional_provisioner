@@ -156,7 +156,7 @@ hosts:
         description: "Directory for Ansible Scripts"
         map: ./provisioners/ansible/
         to: /vagrant/ansible/
-        type: rsync
+        type: ::SYNC_METHOD:: ## rsync or scp
         args:
           - '--verbose'
           - '--archive'
@@ -167,17 +167,17 @@ hosts:
         description: "Directory for Application Installers"
         map: ./installers/
         to: /vagrant/installers/
-        type: rsync
+        type: ::SYNC_METHOD:: ## rsync or scp
       -
         description: "Directory for Pre-Signed SSLs"
         map: ./ssls/
         to: /secure/
-        type: rsync
+        type: ::SYNC_METHOD:: ## rsync or scp
       -
         description: "Directory for Server and User IDs"
         map: ./id-files/
         to: /id-files/
-        type: rsync
+        type: ::SYNC_METHOD:: ## rsync or scp
         syncback: ::SYNCBACK_ID_FILES::
 
     vars:
