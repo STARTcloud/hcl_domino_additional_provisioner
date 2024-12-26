@@ -78,6 +78,9 @@ hosts:
         -
           name: vagrant-scp-sync
           version: latest
+#        -
+#          name: vagrant-zones
+#          version: latest
       remove:
         -
           name: vagrant-scp
