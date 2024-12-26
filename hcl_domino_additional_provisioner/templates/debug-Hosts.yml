@@ -25,7 +25,7 @@ hosts:
       memory: 8G
 
       # Console Access
-      consoleport: 4020
+      consoleport: 4021
       consolehost: 0.0.0.0
       show_console: false
 
@@ -74,7 +74,13 @@ hosts:
       cpu_configuration: simple
 
     plugins:
-      - vagrant-scp-sync
+      install:
+        -
+          name: vagrant-scp-sync
+          version: latest
+      remove:
+        -
+          name: vagrant-scp
 
     networks:
       # if ::NO_BRIDGE_INTERFACE::
@@ -251,8 +257,14 @@ hosts:
 
       # ots: Use One Touch Setup to generate the ID (server names are incremented, ie mail1 mail2 mail3 . .)
       # asja: Use Custom Additional Server Java Applet to generate the additional server ID
-      #domino_server_id_creation_tool:
-      #ots_generate_server_id_count: 0
+      #domino_server_id_creation_tool: ots
+
+      # For use in Domino 14 and above
+      #ots_generate_server_names:
+      #  - additional-demo.startcloud.com
+      
+      # For use in Domino 12 and below
+      #ots_generate_server_id_count:  1
       #ots_generate_server_id_pattern: mail
       #asja_generate_server_ids:
       #  - ::DOMINO_ADITIONAL_HOSTNAME::.::SERVER_DOMAIN::.id
@@ -374,18 +386,6 @@ hosts:
         vars:
           run_tasks: true
       - name: startcloud.hcl_roles.domino_vagrant_readme
-      - name: startcloud.startcloud_roles.mariadb
-        vars:
-          run_tasks: false
-      - name: startcloud.startcloud_roles.docker
-        vars:
-          run_tasks: false
-      - name: startcloud.hcl_roles.domino_voltmx_go
-        vars:
-          run_tasks: false
-      - name: startcloud.hcl_roles.voltmx
-        vars:
-          run_tasks: false
       - name: startcloud.startcloud_roles.quick_start
         tags: always
         vars:
