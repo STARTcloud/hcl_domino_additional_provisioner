@@ -32,7 +32,7 @@ hosts:
       # Box information
       box: 'STARTcloud/debian12-server'
       box_url: 'https://boxvault.startcloud.com'
-      box_version: 0.0.9
+      box_version: 2025.1.17
 
       # Provider Specific Settings
       provider_type: virtualbox
@@ -186,6 +186,7 @@ hosts:
         type: virtualbox
         disabled: true
         automount: true
+
       -
         description: "Directory for Ansible Scripts"
         map: ./provisioners/ansible/
@@ -197,16 +198,31 @@ hosts:
           - '--delete'
           - '-z'
           - '--copy-links'
+
+      -
+        description: "Directory for Ansible Scripts"
+        map: ./provisioners/ansible_collections/
+        to: /vagrant/ansible_collections/
+        type: rsync
+        args:
+          - '--verbose'
+          - '--archive'
+          - '--delete'
+          - '-z'
+          - '--copy-links'
+
       -
         description: "Directory for Application Installers"
         map: ./installers/
         to: /vagrant/installers/
         type: rsync
+
       -
         description: "Directory for Pre-Signed SSLs"
         map: ./ssls/
         to: /secure/
         type: rsync
+
       -
         description: "Directory for Server and User IDs"
         map: ./id-files/
@@ -254,9 +270,9 @@ hosts:
 
       ## Additional server options
       is_additional_server: true
-      #domino_server_id: "additional-demo.startcloud.com.id"
-      #origin_server: "standalone-demo.startcloud.com"
-      #origin_server_ip: "192.168.2.255"
+      domino_server_id: "additional-demo.startcloud.com.id"
+      origin_server: "standalone-demo.startcloud.com"
+      origin_server_ip: "10.12.0.103"
 
       # ots: Use One Touch Setup to generate the ID (server names are incremented, ie mail1 mail2 mail3 . .)
       # asja: Use Custom Additional Server Java Applet to generate the additional server ID
@@ -337,7 +353,7 @@ hosts:
         - hostname: standalone-demo.startcloud.com
           aliases:
             - standalone-demo
-          ip: 192.168.2.255
+          ip: 10.12.0.103
 
     roles:
       - name: startcloud.startcloud_roles.setup
