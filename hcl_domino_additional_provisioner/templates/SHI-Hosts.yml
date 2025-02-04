@@ -215,9 +215,6 @@ hosts:
       domino_organization: ::SERVER_ORGANIZATION::
       domino_admin_notes_id_password: ::DOMINO_ADMIN_PASSWORD::
 
-      ## Safe-ids to cross-certify
-      user_safe_id: ::USER_SAFE_ID::
-
       ## Additional server options
       is_additional_server: ::DOMINO_IS_ADDITIONAL_INSTANCE::
       domino_server_id: ::DOMINO_SERVER_ID::
@@ -329,7 +326,8 @@ hosts:
       - name: startcloud.hcl_roles.domino_config 
       - name: startcloud.hcl_roles.domino_genesis
       - name: startcloud.hcl_roles.domino_genesis_applications
-      - name: startcloud.hcl_roles.domino_cross_certify
+      # Cross-certification not available on additional server, since certifier ID is not present
+      #- name: startcloud.hcl_roles.domino_cross_certify
       - name: startcloud.hcl_roles.domino_java_app_example
         vars:
           run_tasks: true
