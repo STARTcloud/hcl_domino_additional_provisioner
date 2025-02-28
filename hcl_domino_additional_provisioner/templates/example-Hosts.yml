@@ -274,8 +274,9 @@ hosts:
       #domino_admin_notes_id_password: password
 
       # Domino OIDC Configurations
-      domino_oidc_provider_enabled: true
-      domino_oidc_provider_federation_enabled: true
+      # Disabled for additional servers
+      domino_oidc_provider_enabled: false
+      domino_oidc_provider_federation_enabled: false
 
       #domino_oidc_external_providers:
       #  - name: null
@@ -374,11 +375,12 @@ hosts:
       #domino_rest_api_archive:
 
       ## Hosts entries for /etc/hosts
+      ## For Additional servers, this should define a reference to the origin server (origin_server, origin_server_ip)
       etc_hosts_entries:
-        - hostname: standalone-demo.startcloud.com
+        - hostname: REPLACEME #test-standalone.shi.com
           aliases:
-            - standalone-demo
-          ip: 10.12.0.103
+            - REPLACEME #test-standalone
+          ip: REPLACEME #10.12.0.103
 
     roles:
       - name: startcloud.startcloud_roles.setup
