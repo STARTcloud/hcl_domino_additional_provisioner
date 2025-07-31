@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.23](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner-v0.1.22...hcl_domino_additional_provisioner/v0.1.23) (2025-07-31)
+
+
+### Bug Fixes
+
+* adding progress role and functionality ([21fc3fa](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/21fc3fa0961faa400a7458d0fecd1e5ee1ac2ba2))
+* Udpating, Core, Submodules and Templates ([018d5b9](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/018d5b929734c2b42fe29e88c44bc2cf07ceb0b5))
+* updating submodules ([705bd43](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/705bd430b7b58ea07dcf1d165b96591175dc88f7))
+
 ## [0.1.22](https://github.com/DominoVagrant/demo-tasks/compare/demo-tasks/v0.1.21...demo-tasks/v0.1.22) (2023-09-20)
 
 
