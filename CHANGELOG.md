@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.23](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner-v0.1.22...hcl_domino_additional_provisioner/v0.1.23) (2025-12-12)
+
+
+### Bug Fixes
+
+* adding progress role and functionality ([21fc3fa](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/21fc3fa0961faa400a7458d0fecd1e5ee1ac2ba2))
+* debian 13 deprecations/updates ([5a626a1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5a626a1cb45794a898aad1b60c37997f22233b0e))
+* Udpating, Core, Submodules and Templates ([018d5b9](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/018d5b929734c2b42fe29e88c44bc2cf07ceb0b5))
+* updating dependencies ([a4e6b10](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/a4e6b10b54ea43dd48a28ddbbe3210a9123d3d35))
+* updating submodules ([1f113de](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/1f113de43aeaac07fa1a3000e3b8abdcf23f036b))
+* updating submodules ([e792d1b](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/e792d1b5843f9dd5900a1be77a9a8ed6f74cbf6e))
+* updating submodules ([cfad634](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/cfad634a2faeb057507d7af9350ae6d996f8f29e))
+* updating submodules ([dd0681f](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/dd0681f1be143183d85c0d7744f044338be2eb1d))
+* updating submodules ([705bd43](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/705bd430b7b58ea07dcf1d165b96591175dc88f7))
+
 ## [0.1.22](https://github.com/DominoVagrant/demo-tasks/compare/demo-tasks/v0.1.21...demo-tasks/v0.1.22) (2023-09-20)
 
 
