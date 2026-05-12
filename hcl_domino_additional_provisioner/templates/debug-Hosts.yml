@@ -428,6 +428,7 @@ hosts:
         vars:
           run_tasks: true
       - name: startcloud.hcl_roles.domino_vagrant_readme
+      - name: startcloud.startcloud_roles.support_bundle
       - name: startcloud.startcloud_roles.quick_start
         tags: always
         vars:
