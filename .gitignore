@@ -4,22 +4,22 @@ vault.yml
 ## Don't Save Log Files
 *.log
 support-bundle.zip
-
+.claude
 # Don't Include Vagrant support files
 .vagrant
-hcl_domino_additional_provisioner/id_rsa
-hcl_domino_additional_provisioner/Hosts.yml
-Hosts.template.yml
-hcl_domino_additional_provisioner/results.yml
-# Don't include your ID Files!
-id-files/*.ids
-id-files/*.id
-id-files/*.IDS
-id-files/*.ID
+id_rsa
+Hosts.yml
+results.yml
+
+# The core_provisioner driver is fetched at build/bootstrap from the release
+# pinned in driver.version — never committed. Its ssls/ subtree is the
+# canonical SSL location (synced to /secure/; BYO certs drop in there too).
+driver/
 DeployKey_rsa
 *.vdi
 vault-Docova.yml
 
+# Don't include your ID Files!
 *.IDS
 *.ID
 *.id
@@ -37,9 +37,10 @@ SAFE.IDS
 build/
 test_files/
 
-*/installers/*/archives/*.tar.xz
-*/installers/*/archives/*.tar.gz
-*/installers/*/archives/*.tar
-*/installers/*/archives/*.zip
-*/installers/*/archives/*.gz
-*/installers/*/archives/*.tgz
+# Installer binaries never get committed
+installers/*/archives/*.tar.xz
+installers/*/archives/*.tar.gz
+installers/*/archives/*.tar
+installers/*/archives/*.zip
+installers/*/archives/*.gz
+installers/*/archives/*.tgz

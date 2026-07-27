@@ -3,11 +3,16 @@
         ".": {
             "changelog-path": "CHANGELOG.md",
             "release-type": "ruby",
-            "bump-minor-pre-major": true,
-            "bump-patch-for-minor-pre-major": true,
             "package-name": "hcl_domino_additional_provisioner",
             "draft": false,
-            "version-file": "hcl_domino_additional_provisioner/version.rb",
+            "version-file": "version.rb",
+            "extra-files": [
+                {
+                    "type": "yaml",
+                    "path": "provisioner.yml",
+                    "jsonpath": "$.version"
+                }
+            ],
             "prerelease": false,
             "default-branch" : "main",
             "component": "hcl_domino_additional_provisioner"
