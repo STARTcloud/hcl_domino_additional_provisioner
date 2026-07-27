@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner/v0.2.0...hcl_domino_additional_provisioner/v0.2.1) (2026-07-27)
+
+
+### Bug Fixes
+
+* removing device when not used in disks ([1a753e4](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/1a753e4048037c04e91713fa1be1b73f64bcdc68))
+
 ## [0.2.0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner-v0.1.22...hcl_domino_additional_provisioner/v0.2.0) (2026-07-27)
 
 
