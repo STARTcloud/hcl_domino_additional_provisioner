@@ -1,7 +1,9 @@
 name: hcl_domino_additional_provisioner
-version: 0.1.22
+version: 0.2.0
 label: HCL Domino Additional Provisioner
-description: Provisions an additional HCL Domino server that joins an existing Domino domain
+description: >-
+  Provisions an additional HCL Domino server that joins an existing Domino
+  domain
 author: STARTcloud
 metadata:
   configuration:
@@ -29,7 +31,9 @@ metadata:
     fields:
       - name: SERVER_ORGANIZATION
         label: Domino Organization
-        tooltip: The Domino organization (O=) this server belongs to — must match the existing domain's organization
+        tooltip: >-
+          The Domino organization (O=) this server belongs to — must match the
+          existing domain's organization
         type: text
         group: domino
         required: true
@@ -41,26 +45,34 @@ metadata:
         default: password
       - name: USER_SAFE_ID
         label: User Safe ID
-        tooltip: Filename of the safe ID placed in id-files/user-safe-ids used for cross-certification
+        tooltip: >-
+          Filename of the safe ID placed in id-files/user-safe-ids used for
+          cross-certification
         type: text
         group: domino
         default: SAFE.ids
       - name: DOMINO_IS_ADDITIONAL_INSTANCE
         label: Join an Existing Domino Domain
-        tooltip: When enabled this server registers as an additional server against the origin server instead of standing up a new domain
+        tooltip: >-
+          When enabled this server registers as an additional server against the
+          origin server instead of standing up a new domain
         type: checkbox
         group: domino
         default: true
       - name: DOMINO_SERVER_ID
         label: Additional Server ID Filename
-        tooltip: Filename of the pre-generated server ID placed in id-files/server-ids for this additional server
+        tooltip: >-
+          Filename of the pre-generated server ID placed in id-files/server-ids
+          for this additional server
         type: text
         group: domino
         show_if:
           DOMINO_IS_ADDITIONAL_INSTANCE: true
       - name: DOMINO_ORIGIN_HOSTNAME
         label: Origin Server Hostname
-        tooltip: Short hostname of the existing Domino server this machine joins — without the domain suffix
+        tooltip: >-
+          Short hostname of the existing Domino server this machine joins —
+          without the domain suffix
         type: text
         group: origin
         required: true
@@ -76,7 +88,9 @@ metadata:
           DOMINO_IS_ADDITIONAL_INSTANCE: true
       - name: DOMINO_ORIGIN_SERVER_IP
         label: Origin Server IP Address
-        tooltip: IP address of the origin server so this machine can reach it before DNS is configured
+        tooltip: >-
+          IP address of the origin server so this machine can reach it before
+          DNS is configured
         type: text
         group: origin
         required: true
@@ -96,13 +110,17 @@ metadata:
         default: true
       - name: LETSENCRYPT_ENABLED
         label: Use Let's Encrypt
-        tooltip: Request a certificate from Let's Encrypt instead of using a self-signed one — requires a publicly resolvable hostname
+        tooltip: >-
+          Request a certificate from Let's Encrypt instead of using a
+          self-signed one — requires a publicly resolvable hostname
         type: checkbox
         group: ssl
         default: false
       - name: LETSENCRYPT_STAGING_ENABLED
         label: Use Let's Encrypt Staging Environment
-        tooltip: Use the Let's Encrypt staging CA to avoid production rate limits while testing
+        tooltip: >-
+          Use the Let's Encrypt staging CA to avoid production rate limits while
+          testing
         type: checkbox
         group: ssl
         default: false
@@ -110,7 +128,9 @@ metadata:
           LETSENCRYPT_ENABLED: true
       - name: DOMINO_INSTALLER
         label: Domino Server Installer Archive
-        tooltip: Filename of the Domino server installer tar placed in installers/domino/archives or downloaded from your installer server
+        tooltip: >-
+          Filename of the Domino server installer tar placed in
+          installers/domino/archives or downloaded from your installer server
         type: text
         group: installers
         default: Domino_14.0_Linux_English.tar
@@ -193,7 +213,9 @@ metadata:
           DOMINO_INSTALLER_HOTFIX_INSTALL: true
       - name: LEAP_INSTALLER
         label: Leap Installer Archive
-        tooltip: Filename of the HCL Leap installer archive in installers/leap/archives — required when the Leap role is enabled
+        tooltip: >-
+          Filename of the HCL Leap installer archive in installers/leap/archives
+          — required when the Leap role is enabled
         type: text
         group: installers
       - name: LEAP_INSTALLER_VERSION
@@ -208,7 +230,9 @@ metadata:
         group: installers
       - name: NOMADWEB_INSTALLER
         label: Nomad Web Installer Archive
-        tooltip: Filename of the HCL Nomad Web archive in installers/nomadweb/archives — required when the Nomad Web role is enabled
+        tooltip: >-
+          Filename of the HCL Nomad Web archive in installers/nomadweb/archives
+          — required when the Nomad Web role is enabled
         type: text
         group: installers
       - name: NOMADWEB_VERSION
@@ -223,7 +247,9 @@ metadata:
         group: installers
       - name: TRAVELER_INSTALLER
         label: Traveler Installer Archive
-        tooltip: Filename of the HCL Traveler archive in installers/traveler/archives — required when the Traveler role is enabled
+        tooltip: >-
+          Filename of the HCL Traveler archive in installers/traveler/archives —
+          required when the Traveler role is enabled
         type: text
         group: installers
       - name: TRAVELER_INSTALLER_VERSION
@@ -243,7 +269,9 @@ metadata:
         group: installers
       - name: VERSE_INSTALLER
         label: Verse Installer Archive
-        tooltip: Filename of the HCL Verse archive in installers/verse/archives — required when the Verse role is enabled
+        tooltip: >-
+          Filename of the HCL Verse archive in installers/verse/archives —
+          required when the Verse role is enabled
         type: text
         group: installers
       - name: VERSE_INSTALLER_VERSION
@@ -253,7 +281,10 @@ metadata:
         group: installers
       - name: DOMINO_REST_API_INSTALLER
         label: Domino REST API Installer Archive
-        tooltip: Filename of the Domino REST API archive in installers/domino-rest-api/archives — required when the REST API role is enabled
+        tooltip: >-
+          Filename of the Domino REST API archive in
+          installers/domino-rest-api/archives — required when the REST API role
+          is enabled
         type: text
         group: installers
       - name: DOMINO_REST_API_INSTALLER_VERSION
@@ -284,7 +315,9 @@ metadata:
         default: rsync
       - name: SYNCBACK_ID_FILES
         label: Sync ID Files Back to Host
-        tooltip: Copy generated Domino ID files from the guest back to the host id-files directory after provisioning
+        tooltip: >-
+          Copy generated Domino ID files from the guest back to the host
+          id-files directory after provisioning
         type: checkbox
         group: sync
         default: true
@@ -326,7 +359,9 @@ metadata:
       description: Installs the HCL Domino server from the configured installer archive
     - name: domino_reset
       label: Domino Reset
-      description: Resets an existing Domino installation back to a pre-setup state before configuring
+      description: >-
+        Resets an existing Domino installation back to a pre-setup state before
+        configuring
       depends_on:
         - domino
     - name: domino_service_nash
@@ -351,7 +386,9 @@ metadata:
         - domino
     - name: domino_vagrant_rest_api
       label: Vagrant REST API
-      description: Installs the REST API used by Super.Human.Installer and the platform to manage the guest
+      description: >-
+        Installs the REST API used by Super.Human.Installer and the platform to
+        manage the guest
       depends_on:
         - domino
     - name: domino_config
@@ -361,17 +398,23 @@ metadata:
         - domino
     - name: domino_genesis
       label: Genesis
-      description: Installs the Genesis directory used to deploy Domino applications automatically
+      description: >-
+        Installs the Genesis directory used to deploy Domino applications
+        automatically
       depends_on:
         - domino
     - name: domino_genesis_applications
       label: Genesis Applications
-      description: Deploys the configured Genesis packages such as netmonitor and SuperHumanPortal
+      description: >-
+        Deploys the configured Genesis packages such as netmonitor and
+        SuperHumanPortal
       depends_on:
         - domino_genesis
     - name: domino_cross_certify
       label: Cross Certify Safe IDs
-      description: Cross-certifies user safe IDs against the server certifier — standalone servers only
+      description: >-
+        Cross-certifies user safe IDs against the server certifier — standalone
+        servers only
       depends_on:
         - domino
     - name: domino_java_app_example
@@ -386,7 +429,9 @@ metadata:
         - domino
     - name: domino_leap
       label: HCL Leap
-      description: Installs HCL Leap low-code application platform from the configured archive
+      description: >-
+        Installs HCL Leap low-code application platform from the configured
+        archive
       depends_on:
         - domino
     - name: domino_traveler
@@ -421,7 +466,9 @@ metadata:
         - domino
     - name: haproxy
       label: HAProxy
-      description: Installs HAProxy as the TLS-terminating reverse proxy in front of Domino web services
+      description: >-
+        Installs HAProxy as the TLS-terminating reverse proxy in front of Domino
+        web services
       depends_on:
         - ssl
     - name: quick_start
@@ -429,7 +476,11 @@ metadata:
       description: Serves the provisioning status and welcome page during and after setup
     - name: vagrant_readme
       label: Vagrant README
-      description: Generates a README on the guest describing access details for this machine
+      description: >-
+        Generates a README on the guest describing access details for this
+        machine
     - name: lockdown
       label: Lockdown
-      description: Hardens the guest at the end of provisioning — rotates credentials and applies the configured user password
+      description: >-
+        Hardens the guest at the end of provisioning — rotates credentials and
+        applies the configured user password
