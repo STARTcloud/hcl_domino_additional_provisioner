@@ -1,5 +1,5 @@
 name: hcl_domino_additional_provisioner
-version: 0.2.2
+version: 0.2.3
 label: HCL Domino Additional Provisioner
 description: >-
   Provisions an additional HCL Domino server that joins an existing Domino
