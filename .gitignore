@@ -25,6 +25,10 @@ vault-Docova.yml
 *.id
 *.ids
 SAFE.IDS
+# Except org certifier SAFE copies (public cert only, no private key) —
+# needed so new domains can cross certify the org out of the box
+!id-files/org-safe-ids/*.id
+!id-files/org-safe-ids/*.ids
 
 # Build Files to Ignore
 .DS_Store

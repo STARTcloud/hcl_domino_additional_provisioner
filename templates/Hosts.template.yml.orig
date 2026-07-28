@@ -245,6 +245,9 @@ hosts:
       # You need to add a file matching this name to id-files/user-safe-ids
       #user_safe_id: SAFE.ids
 
+      #org_safe_ids:
+      #  - pni_safe.id
+
       ## Additional server options
       is_additional_server: ::DOMINO_IS_ADDITIONAL_INSTANCE::
       domino_server_id: ::DOMINO_SERVER_ID::
