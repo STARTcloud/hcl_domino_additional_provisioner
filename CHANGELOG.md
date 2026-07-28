@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner/v0.2.3...hcl_domino_additional_provisioner/v0.2.4) (2026-07-28)
+
+
+### Bug Fixes
+
+* updating provisioner logo ([97a9f55](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/97a9f553a311909d7c9b1a4233cafb9fc69d1215))
+
 ## [0.2.3](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner/v0.2.2...hcl_domino_additional_provisioner/v0.2.3) (2026-07-28)
 
 
