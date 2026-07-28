@@ -5,6 +5,7 @@ description: >-
   Provisions an additional HCL Domino server that joins an existing Domino
   domain
 author: STARTcloud
+icon: https://startcloud.com/brand-assets/startcloud.svg
 metadata:
   configuration:
     groups:
