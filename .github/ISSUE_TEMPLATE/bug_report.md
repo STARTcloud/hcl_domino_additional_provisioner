@@ -17,7 +17,7 @@ A clear and concise description of what the bug is.
 - Host OS: [e.g., Windows 11, macOS 15, OmniOS r151054]
 - Vagrant Version: [e.g., 2.4.3]
 - Provider: [e.g., VirtualBox 7.1, vagrant-zones/bhyve]
-- Provisioner Version: [e.g., 0.1.11]
+- Provisioner Version: [e.g., 0.2.2]
 - Consumed via: [release archive / git checkout / platform agent]
 
 ## Hosts.yml

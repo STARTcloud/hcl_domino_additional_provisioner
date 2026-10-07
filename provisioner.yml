@@ -6,9 +6,12 @@ description: >-
   domain
 author: STARTcloud
 icon: https://startcloud.com/brand-assets/startcloud.svg
+homepage: https://startcloud.com/
 metadata:
   configuration:
     groups:
+      - name: provider
+        label: Provider
       - name: domino
         label: Domino
       - name: origin
@@ -30,6 +33,19 @@ metadata:
         label: Debugging
         advanced: true
     fields:
+      - name: VAGRANT_PROVIDER
+        label: Vagrant Provider
+        tooltip: >-
+          Hypervisor provider the machine is created on — VirtualBox on
+          desktops, Bhyve/zones on illumos hosts
+        type: select
+        group: provider
+        default: virtualbox
+        options:
+          - label: VirtualBox
+            value: virtualbox
+          - label: Bhyve/Zones (illumos)
+            value: zones
       - name: SERVER_ORGANIZATION
         label: Domino Organization
         tooltip: >-

@@ -22,12 +22,13 @@ Provide context about what you're trying to achieve:
 
 - Host OS: [e.g., Windows 11, macOS 15, OmniOS r151054]
 - Vagrant Version: [e.g., 2.4.3]
-- Provisioner Version: [e.g., 0.1.11]
+- Provisioner Version: [e.g., 0.2.2]
 
 ## What You've Tried
 
 - [ ] Checked the [README](../../README.md)
 - [ ] Looked at [templates/Hosts.template.yml](../../templates/Hosts.template.yml)
+- [ ] Looked at [examples/Hosts.yml](../../examples/Hosts.yml)
 - [ ] Searched existing issues and discussions
 
 **Specific attempts:**

@@ -1,14 +1,6 @@
 name: 'CodeQL Advanced'
 
-# Reusable CodeQL scan, chained from ci.yml (needs ansible-lint) and run weekly
-# on a schedule. Mirrors the hyperweaver-docs / hyperweaver-server /
-# hyperweaver-ui layout. Only the repo's first-party code is scanned: the
-# GitHub Actions workflows and the ansible filter plugin (Python). Ruby
-# (Hosts.rb) lives in the core_provisioner submodule and is scanned there.
-
 on:
-  schedule:
-    - cron: '17 5 * * 4'
   workflow_call:
 
 jobs:

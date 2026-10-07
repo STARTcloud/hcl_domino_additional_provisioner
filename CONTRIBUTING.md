@@ -19,13 +19,13 @@ Before creating an issue, please:
 2. **Keep changes focused** and write commit messages using [Conventional Commits](https://www.conventionalcommits.org/) — release-please builds the changelog and version bumps from them (`fix:` = patch, `feat:` = minor)
 3. **Make sure CI passes**: `ansible-lint --strict` must be clean over `provisioners/ansible`
 4. **Fill out the pull request template** completely
-5. **Role changes live in the collection submodules** (`provisioners/ansible_collections/`) — submit those to their own repositories (startcloud_roles, hcl_roles) and bump the submodule pointer here
+5. **Role changes live in the collections** — submit those to [STARTcloud/hcl_roles](https://github.com/STARTcloud/hcl_roles) or [STARTcloud/startcloud_roles](https://github.com/STARTcloud/startcloud_roles); the releases pinned in `collections/*.version` are bumped here by the Dependency Bump workflow when a collection release publishes
 
 ### Testing Changes
 
 There is no unit test suite — the package is exercised by real `vagrant up` runs. Before submitting:
 
-1. Test with a real `Hosts.yml` (start from `templates/Hosts.template.yml`)
+1. Test with a real `Hosts.yml` (start from `examples/Hosts.yml` or `templates/Hosts.template.yml`)
 2. State in the PR which providers you tested (VirtualBox, Bhyve/zones)
 3. Call out anything that changes the `Hosts.yml` schema, the manifest (`provisioner.yml`), or the platform template contract
 
@@ -54,4 +54,4 @@ This project follows our [Code of Conduct](CODE_OF_CONDUCT.md). By participating
 
 ## License
 
-By contributing to HCL Domino Additional Provisioner, you agree that your contributions will be licensed under the terms in [LICENSE.md](LICENSE.md).
+By contributing to HCL Domino Additional Provisioner, you agree that your contributions will be licensed under the [Apache License 2.0](LICENSE.md).

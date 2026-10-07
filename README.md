@@ -11,15 +11,15 @@ Documentation for HCL Domino Additional Provisioner
 
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-* [Key Features](#key-features)
-* [Roadmap](#roadmap)
-* [Provider Support](#provider-support)
-* [Built With](#built-with)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#authors)
-* [Acknowledgements](#acknowledgments)
+- [About the Project](#about-the-project)
+- [Key Features](#key-features)
+- [Roadmap](#roadmap)
+- [Provider Support](#provider-support)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#authors)
+- [Acknowledgements](#acknowledgments)
 
 ## About the Project
 
@@ -27,10 +27,10 @@ HCL Domino Additional Provisioner is a provisioner package that installs an addi
 
 ## Key Features
 
-* **Role Management**: Offers a comprehensive set of Ansible roles for various aspects of VM preparation and configuration.
-* **Technology Installation**: Automates the installation of proprietary technologies like Verse, Domino, Traveler, and Nomad, simplifying the deployment process.
-* **Service Configuration**: Simplifies the setup of necessary services on VMs, streamlining the deployment process.
-* **Dependency Installation**: Handles the installation of required dependencies, reducing manual setup efforts.
+- **Role Management**: Offers a comprehensive set of Ansible roles for various aspects of VM preparation and configuration.
+- **Technology Installation**: Automates the installation of proprietary technologies like Verse, Domino, Traveler, and Nomad, simplifying the deployment process.
+- **Service Configuration**: Simplifies the setup of necessary services on VMs, streamlining the deployment process.
+- **Dependency Installation**: Handles the installation of required dependencies, reducing manual setup efforts.
 
 ### Including HCL Domino Additional Provisioner
 
@@ -40,8 +40,9 @@ a mutable `hcl_domino_additional_provisioner.tar.gz` "latest" alias) with
 `.sha256` sidecars — the registry-shaped artifact contract the provisioner
 catalog uses. See [RELEASE.md](RELEASE.md) for how releases are produced.
 
-For plain vagrant use, clone this repository (with submodules), create a
-`Hosts.yml` at the repository root (see [templates/](templates/)), and run
+For plain vagrant use, clone this repository, copy `examples/Hosts.yml` to
+`Hosts.yml` at the repository root, place the collection releases pinned in
+`collections/*.version` under `provisioners/ansible_collections/`, and run
 `vagrant up` — the pinned core driver bootstraps itself on first run.
 
 ### Interacting with `Hosts.yml` and `Hosts.rb`
@@ -71,41 +72,41 @@ See the [open issues](https://github.com/STARTcloud/hcl_domino_additional_provis
 
 ## Provider Support
 
-| Provider | Supported by HCL Domino Additional Provisioner |
-| -------- | ---------------------------------------------- |
-| VirtualBox | Yes |
-| Bhyve/Zones | Yes |
-| VMware Fusion | No |
-| Hyper-V | No |
-| Parallels | No |
-| AWS EC2 | Yes |
-| Google Cloud | No |
-| Azure | No |
-| DigitalOcean | No |
-| Linode | No |
-| Vultr | No |
-| Oracle Cloud | No |
-| OpenStack | No |
-| Rackspace | No |
-| Alibaba Cloud | No |
-| Aiven | No |
-| Packet | No |
-| Scaleway | No |
-| OVH | No |
-| Exoscale | No |
-| Hetzner Cloud | No |
-| KVM | Yes |
-| QEMU | Yes |
-| Docker Desktop | No |
-| HyperKit | No |
-| WSL2 | No |
+| Provider       | Supported by HCL Domino Additional Provisioner |
+| -------------- | ---------------------------------------------- |
+| VirtualBox     | Yes                                            |
+| Bhyve/Zones    | Yes                                            |
+| VMware Fusion  | No                                             |
+| Hyper-V        | No                                             |
+| Parallels      | No                                             |
+| AWS EC2        | Yes                                            |
+| Google Cloud   | No                                             |
+| Azure          | No                                             |
+| DigitalOcean   | No                                             |
+| Linode         | No                                             |
+| Vultr          | No                                             |
+| Oracle Cloud   | No                                             |
+| OpenStack      | No                                             |
+| Rackspace      | No                                             |
+| Alibaba Cloud  | No                                             |
+| Aiven          | No                                             |
+| Packet         | No                                             |
+| Scaleway       | No                                             |
+| OVH            | No                                             |
+| Exoscale       | No                                             |
+| Hetzner Cloud  | No                                             |
+| KVM            | Yes                                            |
+| QEMU           | Yes                                            |
+| Docker Desktop | No                                             |
+| HyperKit       | No                                             |
+| WSL2           | No                                             |
 
 ## Built With
 
-* [Vagrant](https://www.vagrantup.com/) - Portable Development Environment Suite.
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - Hypervisor.
-* [Ansible](https://www.ansible.com/) - Virtual Machine Automation Management.
-* [Core Provisioner](https://github.com/STARTcloud/core_provisioner) - Core Provisioner.
+- [Vagrant](https://www.vagrantup.com/) - Portable Development Environment Suite.
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - Hypervisor.
+- [Ansible](https://www.ansible.com/) - Virtual Machine Automation Management.
+- [Core Provisioner](https://github.com/STARTcloud/core_provisioner) - Core Provisioner.
 
 ## Contributing
 
@@ -113,16 +114,16 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-* **Joel Anderson** - *Initial work* - [JoelProminic](https://github.com/JoelProminic)
-* **Justin Hill** - *Initial work* - [JustinProminic](https://github.com/JustinProminic)
-* **Mark Gilbert** - *Refactor* - [MarkProminic](https://github.com/MarkProminic)
+- **Joel Anderson** - _Initial work_ - [JoelProminic](https://github.com/JoelProminic)
+- **Justin Hill** - _Initial work_ - [JustinProminic](https://github.com/JustinProminic)
+- **Mark Gilbert** - _Refactor_ - [MarkProminic](https://github.com/MarkProminic)
 
 See also the list of [contributors](https://github.com/STARTcloud/hcl_domino_additional_provisioner/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the SSLP v3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used — see [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md)
+- Hat tip to anyone whose code was used — see [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md)
