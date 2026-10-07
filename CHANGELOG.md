@@ -1,5 +1,62 @@
 # Changelog
 
+## [0.3.0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.2.4...v0.3.0) (2026-10-07)
+
+
+### Features
+
+* converge on the provisioner family CI/CD and pin collections by release ([c43d8a7](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/c43d8a799eaadb67b3e5182b46f4956b94982da7))
+* flattening the repo ([833c6f0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/833c6f07839665d76ec2e44e71198762ade65ae1))
+
+
+### Bug Fixes
+
+* adding etherstub ([0ebfb75](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/0ebfb75ce6b22ece2f58b9a54c58e3dbb6a4aabc))
+* adding progress role and functionality ([21fc3fa](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/21fc3fa0961faa400a7458d0fecd1e5ee1ac2ba2))
+* bump core_provisioner to v0.2.17 ([b731202](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/b7312026f23c51070dec9274fd71a5c434c65a2f))
+* bump core_provisioner to v0.2.17 ([cee33b8](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/cee33b8f6ebf51947576a5d4ac59b8bf54a03e5b))
+* bump hcl_roles to v0.3.0 ([d0df1b8](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/d0df1b84640a8329b9e461e31385ae345bb1969b))
+* bump hcl_roles to v0.3.0 ([57741c1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/57741c18b7e0b2bcadcb75ca2ae81dabe245d7fb))
+* bump startcloud_roles to v0.3.4 ([5009284](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5009284907500594365f2d614f3598a775caa173))
+* bump startcloud_roles to v0.3.4 ([a81f72e](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/a81f72ebc0a69d2569415ce568df02719065e6ca))
+* converge playbook templates and scripts README on the family and drop the stray debug and orig templates ([7ef6606](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/7ef6606b1ef28a413b2c3697abd3b8f86e6f0e9f))
+* debian 13 deprecations/updates ([5a626a1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5a626a1cb45794a898aad1b60c37997f22233b0e))
+* ignore the ansible-lint cache directory ([81e9049](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/81e9049ff8fad89862f5819f7ff08afb1cd93c23))
+* including new nfs client role ([b57a10d](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/b57a10d0d40fde1b406e7d82b87d826896e49793))
+* removing device when not used in disks ([1a753e4](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/1a753e4048037c04e91713fa1be1b73f64bcdc68))
+* Udpating, Core, Submodules and Templates ([018d5b9](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/018d5b929734c2b42fe29e88c44bc2cf07ceb0b5))
+* update submodules ([6ee78ff](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/6ee78ff0e906739fae464659520a2b7eb1b1cac0))
+* update submodules ([5b0aade](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5b0aade7c8b43659a913f61f1b4414e639e08f40))
+* update submodules pre flattening ([6f2aae5](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/6f2aae5cb6d1462570fb91f1e8fa527fdbd476c0))
+* update submodules pre flattening ([40dec59](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/40dec59daf1a9a0b7f690042a196424fcb00d5ec))
+* updating Cross Certification Standards ([2c7f4e6](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/2c7f4e6d9ca477031d9aac8d20506f34658c2791))
+* updating dependencies ([a4e6b10](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/a4e6b10b54ea43dd48a28ddbbe3210a9123d3d35))
+* updating installer urls sytesm ([5560e4d](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5560e4d2d60c63fe7582d37bdc0243b9ab2c7c93))
+* updating provisioner logo ([97a9f55](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/97a9f553a311909d7c9b1a4233cafb9fc69d1215))
+* updating role var parameter scoping ([629ce3b](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/629ce3b8f1e6ef4eeffb2bd8c7cd5d1b9f5ba02c))
+* updating roles ([026be48](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/026be48e1ace99be52a19548465df9f28edc1ab4))
+* updating submdoules ([f0f952f](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/f0f952f023f0a915f238a97754efd9565224abb6))
+* updating submdoules ([151e7a2](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/151e7a2bd299249928912d6b278dffe2d09f1a2a))
+* updating submdoules ([0511dbb](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/0511dbbd39825bac3eac50c7549586ddeca9e490))
+* updating submodules ([5c47c77](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/5c47c77e8ff25338a99299640a5974048b6f3a5b))
+* updating submodules ([60ffbec](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/60ffbec8f3c4f41e0424610077fa6d35c32ea5f3))
+* updating submodules ([91fe8ce](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/91fe8cebc38229b53b4e1404397b6325185711ad))
+* updating submodules ([a9b3d63](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/a9b3d63d0916b65506afa94ea804815cd8d1106d))
+* updating submodules ([f310c1b](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/f310c1b7596c615311007d35b028cb4e6f7bd56f))
+* updating submodules ([ddc55e4](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/ddc55e4f056657fc8de5a4cc3c4d4a0e4fea8072))
+* updating submodules ([42fd01c](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/42fd01c16635c470ed00e782843d2f00b130e932))
+* updating submodules ([8881fdf](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/8881fdf8ad21d89850da8833d71eb465f1012948))
+* updating submodules ([b6c2250](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/b6c2250ee917e88e12840fb5e83a7a524e80d302))
+* updating submodules ([ddc3fb9](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/ddc3fb90c392d7bc236e8e627be6482454063cc2))
+* updating submodules ([1f113de](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/1f113de43aeaac07fa1a3000e3b8abdcf23f036b))
+* updating submodules ([e792d1b](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/e792d1b5843f9dd5900a1be77a9a8ed6f74cbf6e))
+* updating submodules ([cfad634](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/cfad634a2faeb057507d7af9350ae6d996f8f29e))
+* updating submodules ([dd0681f](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/dd0681f1be143183d85c0d7744f044338be2eb1d))
+* updating submodules ([705bd43](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/705bd430b7b58ea07dcf1d165b96591175dc88f7))
+* updating submodules -- traveler fix ([ccd8e58](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/ccd8e587449ed60b88f5589cb3f881ce57ec2cc5))
+* updating submodules for security fixes ([c5dc261](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/c5dc26111ea57eaafa999b3945ca80431f2ade44))
+* updating submodules for security fixes ([db9c9d8](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/db9c9d867496468028a1ad7904847a0791bdd506))
+
 ## [0.2.4](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/hcl_domino_additional_provisioner/v0.2.3...hcl_domino_additional_provisioner/v0.2.4) (2026-07-28)
 
 
