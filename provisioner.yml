@@ -452,12 +452,6 @@ metadata:
           - wget
           - ncdu
           - iotop
-      - name: SYNC_METHOD
-        label: Folder Sync Method
-        help: Vagrant synced-folder mechanism — rsync or scp
-        type: text
-        group: sync
-        default: rsync
       - name: SYNCBACK_ID_FILES
         label: Sync ID Files Back to Host
         help: >-
