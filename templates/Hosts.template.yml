@@ -432,7 +432,7 @@ hosts:
       is_additional_server: {{ DOMINO_IS_ADDITIONAL_INSTANCE | default(true) }}
       {% if DOMINO_IS_ADDITIONAL_INSTANCE %}
       {% if DOMINO_SERVER_ID %}
-      domino_server_id: {{ DOMINO_SERVER_ID }}
+      domino_server_id: "{{ '{{' }} secrets.domino_server_id {{ '}}' }}"
       {% endif %}
       origin_server: {{ DOMINO_ORIGIN_HOSTNAME }}
       origin_server_ip: {{ DOMINO_ORIGIN_SERVER_IP }}
@@ -461,6 +461,10 @@ hosts:
       genesis_packages:
         - netmonitor
         - SuperHumanPortal
+
+      ## Installer Server
+      installer_base_url: "{{ '{{' }} secrets.installer_url | default('') {{ '}}' }}"
+      installer_url_pass: "{{ '{{' }} secrets.installer_url_password | default('') {{ '}}' }}"
 
       ## Domino Installer Variables
       domino_server_installer_tar: {{ DOMINO_INSTALLER | default("Domino_14.0_Linux_English.tar") }}
@@ -535,9 +539,6 @@ hosts:
       {% endif %}
       {% if DOMINO_IQ_MODEL %}
       domino_iq_model: '{{ DOMINO_IQ_MODEL }}'
-      {% endif %}
-      {% if DOMINO_IQ_API_KEY %}
-      domino_iq_api_key: '{{ DOMINO_IQ_API_KEY }}'
       {% endif %}
       domino_iq_use_max_completion_tokens: {{ DOMINO_IQ_USE_MAX_COMPLETION_TOKENS | default(false) }}
 
