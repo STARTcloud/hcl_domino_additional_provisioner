@@ -37,6 +37,7 @@ metadata:
     tags:
       - domino
       - additional
+    guest_agent: true
   configuration:
     groups:
       - name: provider
