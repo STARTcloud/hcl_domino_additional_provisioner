@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.2](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.5.1...v0.5.2) (2026-10-19)
+
+
+### Bug Fixes
+
+* drop the sync method field the agent supplies itself ([c8399ed](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/c8399edb0d0f4a35b99dee2a18f1181ccf9c9e28))
+
 ## [0.5.1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.5.0...v0.5.1) (2026-10-19)
 
 
