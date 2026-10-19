@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.4.0...v0.5.0) (2026-10-19)
+
+
+### Features
+
+* pick the installer server and the Domino IQ key from the host's secrets ([a1f7d30](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/a1f7d300e0d878a8a9fce3d6ccf8842d9dae340b))
+
 ## [0.4.0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.3.0...v0.4.0) (2026-10-19)
 
 
