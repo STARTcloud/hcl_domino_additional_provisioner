@@ -1,5 +1,5 @@
 name: hcl_domino_additional_provisioner
-version: 0.3.0
+version: 0.4.0
 label: HCL Domino Additional Provisioner
 description: >-
   Provisions an additional HCL Domino server that joins an existing Domino
@@ -92,7 +92,9 @@ metadata:
         default: true
       - name: DOMINO_SERVER_ID
         label: Additional Server ID
-        help: Pre-generated server ID placed in id-files/server-ids for this additional server
+        help: >-
+          Pre-generated server ID placed in id-files/server-ids for this
+          additional server
         type: file
         kind: id_file
         role: server_id
@@ -168,13 +170,17 @@ metadata:
         default: https://webui.assistant.prominic.net/api/chat/completions
       - name: DOMINO_IQ_MODEL
         label: Domino IQ Model
-        help: Name of the model the AI endpoint serves, sent in every chat completions request
+        help: >-
+          Name of the model the AI endpoint serves, sent in every chat
+          completions request
         type: text
         group: domino_iq
         default: llama3.1:latest
       - name: DOMINO_IQ_API_KEY
         label: Domino IQ API Key
-        help: API key the remote AI endpoint requires on every chat completions request
+        help: >-
+          API key the remote AI endpoint requires on every chat completions
+          request
         type: password
         group: domino_iq
         show_if:
@@ -182,8 +188,8 @@ metadata:
       - name: DOMINO_IQ_USE_MAX_COMPLETION_TOKENS
         label: Use max_completion_tokens
         help: >-
-          Sets DOMIQ_USE_MAX_COMPLETION_TOKENS=1 in notes.ini, required by GPT-5.1
-          style remote models
+          Sets DOMIQ_USE_MAX_COMPLETION_TOKENS=1 in notes.ini, required by
+          GPT-5.1 style remote models
         type: checkbox
         group: domino_iq
         default: false
@@ -320,7 +326,9 @@ metadata:
         default: false
       - name: NOMADWEB_HOTFIX
         label: Nomad Web Hotfix Archive
-        help: Filename of the HCL Nomad Web interim fix archive in installers/nomadweb/archives
+        help: >-
+          Filename of the HCL Nomad Web interim fix archive in
+          installers/nomadweb/archives
         type: text
         group: installers
         default: HCL_Nomad_server_1.0.21-IF1_linux.tgz
@@ -356,7 +364,9 @@ metadata:
         default: false
       - name: TRAVELER_FP_INSTALLER
         label: Traveler Fixpack Archive
-        help: Filename of the Traveler fixpack archive in installers/traveler/archives
+        help: >-
+          Filename of the Traveler fixpack archive in
+          installers/traveler/archives
         type: text
         group: installers
         default: Traveler_14.5.1FP1_Linux_ML.tar.gz
@@ -463,7 +473,9 @@ metadata:
   roles:
     - name: setup
       label: Setup
-      description: Sets the timezone and creates the completion and support bundle directories
+      description: >-
+        Sets the timezone and creates the completion and support bundle
+        directories
       collection: startcloud.startcloud_roles
       default_enabled: true
       required: true
@@ -538,7 +550,9 @@ metadata:
         - sdkman_install
     - name: ssl
       label: SSL
-      description: Generates or imports the server certificates and exports the PFX, PEM and JKS bundles
+      description: >-
+        Generates or imports the server certificates and exports the PFX, PEM
+        and JKS bundles
       collection: startcloud.startcloud_roles
       default_enabled: true
       required: true
