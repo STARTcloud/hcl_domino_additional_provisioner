@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.1](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.5.0...v0.5.1) (2026-10-19)
+
+
+### Bug Fixes
+
+* tag every machine the provisioner creates ([170870a](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/170870a3ab9936fa232b648c9c9c1ee6559243d6))
+* turn the QEMU guest agent on for every machine the provisioner creates ([2b6eb7d](https://github.com/STARTcloud/hcl_domino_additional_provisioner/commit/2b6eb7d8f446b8fdf83dbbc0027a75ccd4798005))
+
 ## [0.5.0](https://github.com/STARTcloud/hcl_domino_additional_provisioner/compare/v0.4.0...v0.5.0) (2026-10-19)
 
 
